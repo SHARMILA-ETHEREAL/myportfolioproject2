@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharmila's | Portfolio</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /*Body and layout*/
+    body {
+      display: flex;
+      margin: 0;
+      min-height: 100vh;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    h4 {
+      display: inline-block;
+      justify-content: space-between;
+    }
+
+    h3 {
+      background-color: lightgray;
+      margin-bottom: 20px;
+    }
+
+    #maincontent {
+      margin-left: 32.5%;
+    }
+
+    /* Sidebar Styling */
+    .sidebar {
+      border-left: 5px solid #333;
+      border-right: 1.5px solid gainsboro;
+      padding: 20px;
+      background-color: #f4f4f4;
+      width: 400px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      overflow-y: auto;
+    }
+
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .sidebar .typing-text {
+      text-align: center;
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    /* Social Media Links */
+    .sidebar .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 11px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      font-size: 17px;
+      color: rgb(65, 62, 62);
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #007bff;
+    }
+
+    /* Main Content Area */
+    .main-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    /*Section Styling*/
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* Typing Effect */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .typed-text {
+      font-family: monospace;
+      font-size: 18px;
+      display: inline-block;
+      border-right: 2px solid #333;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Profile Photo -->
+    <img src="img1.jpg" alt="Profile Photo">
+    <br>
+    <!-- Name -->
+    <h2>Sharmila S</h2>
+    
+    <!-- Typing Effect Text -->
+    <div class="typing-text">
+      Hi, I am Sharmila S<span class="typed-text"></span>
+      <br>
+      <span class="typed-text">Frontend Developer | Web Designer.</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#maincontent">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://www.instagram.com/sharmila_ethereal_/" target="_blank">Instagram |</a>
+      <a href="https://www.linkedin.com/in/sharmilaethereal" target="_blank">LinkedIn |</a>
+      <a href="mailto:sharmilaethereal@gmail.com">@mailme</a>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div id="maincontent" class="main-content">
+    <!-- About Section -->
+    <section id="about">
+      <h3>About Me</h3>
+      <p>
+       As an aspiring full stack developer, I aim to leverage  my growing expertise in front-end technologies like HTML, CSS, and JavaScript, alongside my expanding knowledge in python, c, and backend frameworks, to contribute to creating dynamic, user-focused web applications. I am eager to apply my problem-solving skills, adaptability, and passion for continuous learning in a collaborative environment where I can support innovative projects and help drive the growth and success of the organization.
+      </p>
+      <div class="row">
+        <div class="col-sm-6 py-1">
+          <h5 class="d-inline text-primary">Name: </h5> SHARMILA S
+        </div>
+        <div class="col-sm-6 py-1">
+          <h5 class="d-inline text-primary">Birthday: </h5> 27 October 2002
+        </div>
+        <div class="col-sm-6 py-1">
+          <h5 class="d-inline text-primary">Degree: </h5> Bachelor Of Computer Application
+        </div>
+        <div class="col-sm-6 py-1">
+          <h5 class="d-inline text-primary">Phone: </h5> +91 9025261710
+        </div>
+        <div class="col-sm-6 py-1">
+          <h5 class="d-inline text-primary">Email: </h5> sharmilaethereal@gmail.com
+        </div>
+        <div class="col-sm-6 py-1">
+          <h5 class="d-inline text-primary">Address: </h5> RS Puram, Coimbatore, Tamil Nadu
+        </div>
+        <div class="col-sm-6 py-1">
+          <h5 class="d-inline text-primary">Freelance: </h4> Available
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+ <section id="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>
+          
+          <div>
+            <strong><p class="mb-2">HTML</p></strong>
+            <p class="mb-2">95%</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong><p class="mb-2">CSS</p></strong>
+            <p class="mb-2">85%</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong><p class="mb-2">JavaScript</p></strong>
+            <p class="mb-2">90%</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong><p class="mb-2">Programming in Python</p></strong>
+            <p class="mb-2">90%</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong><p class="mb-2">Programming in C</p></strong>         
+             <p class="mb-2">95%</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong><p class="mb-2">MS Excel & MS Office Tools</p></strong>
+            <p class="mb-2">85%</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="project">
+        <h5>Portfolio Website - 19/9/2024</h5>
+        <p>A responsive professional portfolio website to showcasing my projects and skills.</p>
+        <a href="https://sharmila-ethereal.github.io/myportfolioproject2/" target="_blank">https://sharmila-ethereal.github.io/myportfolioproject2/</a>
+      </div>
+      <br>
+      <div class="project">
+        <h5>E-commerce Front-End - 21/9/2024</h5>
+        <p>A simple e-commerce web page for a perfume website.</p>
+        <a href="https://sharmila-ethereal.github.io/perfumyproject1/" target="_blank">https://sharmila-ethereal.github.io/perfumyproject1/</a>
+      </div>
+      <br>
+      <div class="project">
+        <h5>Celsius To Fahrenheit Calculator🖩 - 9/10/2024</h5>
+        <p>A simple interactive Fahrenheit Calculator using HTML, CSS & JavaScript.</p>
+                <a href="https://sharmila-ethereal.github.io/fahrenheit-converter/" target="_blank">https://sharmila-ethereal.github.io/fahrenheit-converter/</a>
+      </div>
+      <br>
+      <div class="project">
+        <h5>keep Book💡 - 20/10/2024</h5>
+        <p>Interactive book dodo library using tools HTML, CSS, JavaScript to keep the book anywhere in the pocket</p>
+                <a href="https://sharmila-ethereal.github.io/Keep-Book-Dodo-Library/" target="_blank">https://sharmila-ethereal.github.io/Keep-Book-Dodo-Library/</a>
+      </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h3>Contact Me</h3>
+      <p>If you'd like to get in touch, feel free to reach out via any of the methods below:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:sharmilaethereal@gmail.com">sharmilaethereal@gmail.com</a></li>
+        <li><strong>Phone:</strong><a href=""> +91 9025261710</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sharmilaethereal" target="_blank">linkedin.com/in/sharmilaethereal</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- JavaScript (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
